@@ -51,11 +51,11 @@ class Particle
 				color.a = MathHelpers::smoothStepInOut( animationFraction, 0.0f, 0.1f, 0.9f, 1.0f); // fade the particle in and out depending on the time fraction
 				ofSetColor( color );
 				
-				ofCircle( currPos, 30 );
+				ofDrawCircle( currPos, 30 );
 				
-				ofCircle( startPoint, 3 );
-				ofCircle( endPoint, 3 );				
-				ofLine( startPoint, endPoint );
+				ofDrawCircle( startPoint, 3 );
+				ofDrawCircle( endPoint, 3 );				
+				ofDrawLine( startPoint, endPoint );
 			}
 		}
 	
